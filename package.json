@@ -11,6 +11,14 @@
   },
   "author": "Adrian Budau",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrian-budau/react-smart-forms.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/adrian-budau/react-smart-forms/issues",
+    "email" : "budau.adi@gmail.com"
+  },
   "dependencies": {
     "bluebird": "^2.9.24",
     "classnames": "^1.2.0",
