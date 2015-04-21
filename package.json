@@ -1,0 +1,35 @@
+{
+  "name": "react-smart-forms",
+  "version": "0.2.0",
+  "description": "Declarative forms for React, highly customizable and i18n support",
+  "main": "main.js",
+  "scripts": {
+    "compile": "babel --optional es7.objectRestSpread -d lib/ src/",
+    "coverage": "babel-node node_modules/.bin/isparta cover --report text --report html node_modules/.bin/_mocha -- --require test/support/node.js -R spec test/**/*",
+    "test": "mocha --require test/support/babel.js --require test/support/node.js -R spec test/**/*",
+    "prepublish": "npm run compile"
+  },
+  "author": "Adrian Budau",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.24",
+    "classnames": "^1.2.0",
+    "event-kit": "^1.1.0",
+    "immutable": "^3.7.2",
+    "lodash": "^3.7.0",
+    "react": "~0.13.1",
+    "sprintf-js": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel": "^5.1.10",
+    "babelify": "~5.0.4",
+    "browserify": "~9.0.3",
+    "gulp": "^3.8.11",
+    "gulp-sourcemaps": "~1.5.0",
+    "gulp-util": "~3.0.4",
+    "uglify": "^0.1.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.1.1"
+  }
+}
