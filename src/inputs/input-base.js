@@ -115,8 +115,12 @@ export default class InputBase extends React.Component {
     let Component = this.viewComponents.get(viewFor);
 
     return (
-      <Component {...otherProps} error={this.state.error} value={this.state.data} async={this.state.async}
-        onChange={this.onChange} onBlur={this.onBlur}
+      <Component error={this.state.error}
+                 value={this.state.data}
+                 async={this.state.async}
+                 onChange={this.onChange}
+                 onBlur={this.onBlur}
+                 {...otherProps}
       />
     );
   }

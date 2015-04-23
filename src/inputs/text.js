@@ -10,6 +10,7 @@ export default class TextInput extends React.Component {
       validators,
       ...otherProps
     } = this.props;
+
     if (length !== undefined) {
       length = lengthValidator(length);
     } else {
@@ -17,7 +18,9 @@ export default class TextInput extends React.Component {
     }
 
     return (
-      <InputBase {...otherProps} validators={[length].concat(validators)} viewFor={this.constructor} />
+      <InputBase validators={[length].concat(validators)}
+                 viewFor={this.constructor}
+                 {...otherProps} />
     );
   }
 };

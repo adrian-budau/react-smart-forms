@@ -39,6 +39,7 @@ class SmartForm extends React.Component {
       defaultFormState,
       ...otherProps
     } = this.props;
+
     const changeValidatorsPromise = mergeValidators(
       validators || [],
       this.i18n,

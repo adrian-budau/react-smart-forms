@@ -6,4 +6,5 @@ let form = (
     <Inputs.TextInput length={8} placeholder="Username" name="username"/>
   </SmartForm>
 );
+
 React.render(form, document.getElementById('react'));
