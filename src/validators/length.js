@@ -1,5 +1,4 @@
 'use strict';
-import ValidationError from './error';
 
 export default function length(length) {
   return function () {
